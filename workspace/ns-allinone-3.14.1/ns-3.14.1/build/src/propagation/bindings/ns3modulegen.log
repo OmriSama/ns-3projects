@@ -1,0 +1,19 @@
+>>>>>>>>>>>>>>>> []
+/home/omri/Programs/ns-3/workspace/ns-allinone-3.14.1/ns-3.14.1/src/propagation/bindings/modulegen__gcc_LP64.py:311: Warning: exception TypeLookupError(['std::_List_const_iterator< ns3::AttributeConstructionList::Item >'],) in wrapper public: retval? ???::Begin (params?) const;
+  is_const=True)
+/home/omri/Programs/ns-3/workspace/ns-allinone-3.14.1/ns-3.14.1/src/propagation/bindings/modulegen__gcc_LP64.py:316: Warning: exception TypeLookupError(['std::_List_const_iterator< ns3::AttributeConstructionList::Item >'],) in wrapper public: retval? ???::End (params?) const;
+  is_const=True)
+/home/omri/Programs/ns-3/workspace/ns-allinone-3.14.1/ns-3.14.1/src/propagation/bindings/modulegen__gcc_LP64.py:427: Warning: exception TypeConfigurationError('Missing transfer_ownership option',) in wrapper public: retval? ???::Delete (params?);
+  is_static=True)
+/home/omri/Programs/ns-3/workspace/ns-allinone-3.14.1/ns-3.14.1/src/propagation/bindings/modulegen__gcc_LP64.py:563: Warning: exception TypeLookupError(['ns3::Callback< ns3::ObjectBase *, ns3::empty, ns3::empty, ns3::empty, ns3::empty, ns3::empty, ns3::empty, ns3::empty, ns3::empty, ns3::empty >'],) in wrapper public: retval? ???::GetConstructor (params?) const;
+  is_const=True)
+bindings/python/ns3modulegen-modular.py:27: UserWarning: exception TypeLookupError(['short unsigned int'],) in wrapper None
+  warnings.warn("exception %r in wrapper %s" % (exception, wrapper))
+/home/omri/Programs/ns-3/workspace/ns-allinone-3.14.1/ns-3.14.1/src/propagation/bindings/modulegen__gcc_LP64.py:1075: Warning: exception TypeLookupError(['std::pair< double, double >'],) in wrapper <pybindgen.cppmethod.CppConstructor object at 0x7f6354cbf3d0>
+  cls.add_constructor([param('std::pair< double, double >', 'params')])
+/home/omri/Programs/ns-3/workspace/ns-allinone-3.14.1/ns-3.14.1/src/propagation/bindings/modulegen__gcc_LP64.py:1077: Warning: exception TypeLookupError(['std::pair< double, double >'],) in wrapper <pybindgen.cppmethod.CppConstructor object at 0x7f6354cbf410>
+  cls.add_constructor([param('std::pair< double, double >', 'params'), param('double', 'b')])
+/home/omri/Programs/ns-3/workspace/ns-allinone-3.14.1/ns-3.14.1/src/propagation/bindings/modulegen__gcc_LP64.py:1866: Warning: exception TypeLookupError(['std::complex< double >'],) in wrapper public: retval? ???::GetComplexGain (params?) const;
+  is_const=True)
+bindings/python/ns3modulegen-modular.py:27: UserWarning: exception CodeGenerationError('ns3::PropagationDelayModel cannot be constructed (class has pure virtual methods)',) in wrapper <pybindgen.CppClass 'ns3::PropagationDelayModel'>
+  warnings.warn("exception %r in wrapper %s" % (exception, wrapper))
