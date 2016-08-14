@@ -6,7 +6,7 @@
 ***** registering callback handler: 'ns3::Callback< void, ns3::Ptr< ns3::Socket >, ns3::Address const &, ns3::empty, ns3::empty, ns3::empty, ns3::empty, ns3::empty, ns3::empty, ns3::empty >'
 ***** registering callback handler: 'ns3::Callback< bool, ns3::Ptr< ns3::Socket >, ns3::Address const &, ns3::empty, ns3::empty, ns3::empty, ns3::empty, ns3::empty, ns3::empty, ns3::empty >'
 ***** registering callback handler: 'ns3::Callback< void, ns3::Ptr< ns3::NetDevice >, ns3::Ptr< ns3::Packet const >, unsigned short, ns3::Address const &, ns3::Address const &, ns3::NetDevice::PacketType, ns3::empty, ns3::empty, ns3::empty >'
-/home/omri/Programs/ns-3/workspace/ns-allinone-3.14.1/ns-3.14.1/src/network/bindings/modulegen__gcc_LP64.py:625: Warning: exception TypeConfigurationError('direction not given',) in wrapper <pybindgen.cppmethod.CppConstructor object at 0x7fb8140a04d0>
+/home/omri/Programs/ns-3/workspace/ns-allinone-3.14.1/ns-3.14.1/src/network/bindings/modulegen__gcc_LP64.py:625: Warning: exception TypeConfigurationError('direction not given',) in wrapper <pybindgen.cppmethod.CppConstructor object at 0x7fec838b17d0>
   cls.add_constructor([param('uint8_t', 'type'), param('uint8_t const *', 'buffer'), param('uint8_t', 'len')])
 /home/omri/Programs/ns-3/workspace/ns-allinone-3.14.1/ns-3.14.1/src/network/bindings/modulegen__gcc_LP64.py:636: Warning: exception TypeConfigurationError('direction not given',) in wrapper public: retval? ???::CopyAllFrom (params?);
   [param('uint8_t const *', 'buffer'), param('uint8_t', 'len')])
@@ -42,7 +42,7 @@
   is_static=True)
 /home/omri/Programs/ns-3/workspace/ns-allinone-3.14.1/ns-3.14.1/src/network/bindings/modulegen__gcc_LP64.py:1284: Warning: exception TypeLookupError(['__gnu_cxx::__normal_iterator< ns3::Ptr< ns3::Channel > const, std::vector< ns3::Ptr< ns3::Channel > > >'],) in wrapper public: retval? ???::End (params?);
   is_static=True)
-/home/omri/Programs/ns-3/workspace/ns-allinone-3.14.1/ns-3.14.1/src/network/bindings/modulegen__gcc_LP64.py:1333: Warning: exception TypeLookupError(['ns3::Ptr< ns3::EventImpl > &'],) in wrapper <pybindgen.cppmethod.CppConstructor object at 0x7fb813d7cc10>
+/home/omri/Programs/ns-3/workspace/ns-allinone-3.14.1/ns-3.14.1/src/network/bindings/modulegen__gcc_LP64.py:1333: Warning: exception TypeLookupError(['ns3::Ptr< ns3::EventImpl > &'],) in wrapper <pybindgen.cppmethod.CppConstructor object at 0x7fec8374ff10>
   cls.add_constructor([param('ns3::Ptr< ns3::EventImpl > const &', 'impl'), param('uint64_t', 'ts'), param('uint32_t', 'context'), param('uint32_t', 'uid')])
 /home/omri/Programs/ns-3/workspace/ns-allinone-3.14.1/ns-3.14.1/src/network/bindings/modulegen__gcc_LP64.py:1367: Warning: exception TypeConfigurationError('Either caller_owns_return or self.reference_existing_object must be given',) in wrapper public: retval? ???::PeekEventImpl (params?) const;
   is_const=True)
@@ -54,7 +54,7 @@
   is_const=True)
 /home/omri/Programs/ns-3/workspace/ns-allinone-3.14.1/ns-3.14.1/src/network/bindings/modulegen__gcc_LP64.py:1620: Warning: exception TypeLookupError(['std::ostream &'],) in wrapper public: retval? ???::Print (params?) const;
   is_const=True)
-/home/omri/Programs/ns-3/workspace/ns-allinone-3.14.1/ns-3.14.1/src/network/bindings/modulegen__gcc_LP64.py:1637: Warning: exception TypeConfigurationError('direction not given',) in wrapper <pybindgen.cppmethod.CppConstructor object at 0x7fb813d203d0>
+/home/omri/Programs/ns-3/workspace/ns-allinone-3.14.1/ns-3.14.1/src/network/bindings/modulegen__gcc_LP64.py:1637: Warning: exception TypeConfigurationError('direction not given',) in wrapper <pybindgen.cppmethod.CppConstructor object at 0x7fec836756d0>
   cls.add_constructor([param('uint8_t *', 'address')])
 /home/omri/Programs/ns-3/workspace/ns-allinone-3.14.1/ns-3.14.1/src/network/bindings/modulegen__gcc_LP64.py:1655: Warning: exception TypeConfigurationError('direction not given',) in wrapper public: retval? ???::Deserialize (params?);
   is_static=True)
@@ -66,7 +66,7 @@
   is_const=True)
 /home/omri/Programs/ns-3/workspace/ns-allinone-3.14.1/ns-3.14.1/src/network/bindings/modulegen__gcc_LP64.py:1797: Warning: exception TypeConfigurationError('direction not given',) in wrapper public: retval? ???::Set (params?);
   [param('uint8_t *', 'address')])
-/home/omri/Programs/ns-3/workspace/ns-allinone-3.14.1/ns-3.14.1/src/network/bindings/modulegen__gcc_LP64.py:1807: Warning: exception TypeConfigurationError('direction not given',) in wrapper <pybindgen.cppmethod.CppConstructor object at 0x7fb813ce3890>
+/home/omri/Programs/ns-3/workspace/ns-allinone-3.14.1/ns-3.14.1/src/network/bindings/modulegen__gcc_LP64.py:1807: Warning: exception TypeConfigurationError('direction not given',) in wrapper <pybindgen.cppmethod.CppConstructor object at 0x7fec83640a10>
   cls.add_constructor([param('uint8_t *', 'prefix')])
 /home/omri/Programs/ns-3/workspace/ns-allinone-3.14.1/ns-3.14.1/src/network/bindings/modulegen__gcc_LP64.py:1820: Warning: exception TypeConfigurationError('direction not given',) in wrapper public: retval? ???::GetBytes (params?) const;
   is_const=True)
@@ -144,7 +144,7 @@ bindings/python/ns3modulegen-modular.py:27: UserWarning: exception TypeConfigura
   [param('uint8_t * const', 'data'), param('uint32_t', 'maxBytes'), param('uint32_t &', 'tsSec'), param('uint32_t &', 'tsUsec'), param('uint32_t &', 'inclLen'), param('uint32_t &', 'origLen'), param('uint32_t &', 'readLen')])
 /home/omri/Programs/ns-3/workspace/ns-allinone-3.14.1/ns-3.14.1/src/network/bindings/modulegen__gcc_LP64.py:2757: Warning: exception TypeConfigurationError('direction not given',) in wrapper public: retval? ???::Write (params?);
   [param('uint32_t', 'tsSec'), param('uint32_t', 'tsUsec'), param('uint8_t const * const', 'data'), param('uint32_t', 'totalLen')])
-/home/omri/Programs/ns-3/workspace/ns-allinone-3.14.1/ns-3.14.1/src/network/bindings/modulegen__gcc_LP64.py:2917: Warning: exception TypeLookupError(['short unsigned int'],) in wrapper <pybindgen.cppmethod.CppConstructor object at 0x7fb8139c9a90>
+/home/omri/Programs/ns-3/workspace/ns-allinone-3.14.1/ns-3.14.1/src/network/bindings/modulegen__gcc_LP64.py:2917: Warning: exception TypeLookupError(['short unsigned int'],) in wrapper <pybindgen.cppmethod.CppConstructor object at 0x7fec833a3e50>
   cls.add_constructor([param('short unsigned int', 'value')])
 /home/omri/Programs/ns-3/workspace/ns-allinone-3.14.1/ns-3.14.1/src/network/bindings/modulegen__gcc_LP64.py:2975: Warning: exception TypeLookupError(['ns3::Ptr< ns3::SimulatorImpl >', 'ns3::SimulatorImpl *'],) in wrapper public: retval? ???::GetImplementation (params?);
   is_static=True)
@@ -152,7 +152,7 @@ bindings/python/ns3modulegen-modular.py:27: UserWarning: exception TypeConfigura
   is_static=True)
 /home/omri/Programs/ns-3/workspace/ns-allinone-3.14.1/ns-3.14.1/src/network/bindings/modulegen__gcc_LP64.py:3082: Warning: exception TypeLookupError(['std::ostream &'],) in wrapper public: virtual retval? ???::Print (params?) const = 0;
   is_pure_virtual=True, is_const=True, is_virtual=True)
-/home/omri/Programs/ns-3/workspace/ns-allinone-3.14.1/ns-3.14.1/src/network/bindings/modulegen__gcc_LP64.py:3094: Warning: exception TypeConfigurationError('direction not given',) in wrapper <pybindgen.cppmethod.CppConstructor object at 0x7fb8139adad0>
+/home/omri/Programs/ns-3/workspace/ns-allinone-3.14.1/ns-3.14.1/src/network/bindings/modulegen__gcc_LP64.py:3094: Warning: exception TypeConfigurationError('direction not given',) in wrapper <pybindgen.cppmethod.CppConstructor object at 0x7fec83388d50>
   cls.add_constructor([param('uint8_t *', 'start'), param('uint8_t *', 'end')])
 /home/omri/Programs/ns-3/workspace/ns-allinone-3.14.1/ns-3.14.1/src/network/bindings/modulegen__gcc_LP64.py:3102: Warning: exception TypeConfigurationError('direction not given',) in wrapper public: retval? ???::Read (params?);
   [param('uint8_t *', 'buffer'), param('uint32_t', 'size')])
@@ -174,9 +174,9 @@ bindings/python/ns3modulegen-modular.py:27: UserWarning: exception TypeLookupErr
   is_const=True)
 /home/omri/Programs/ns-3/workspace/ns-allinone-3.14.1/ns-3.14.1/src/network/bindings/modulegen__gcc_LP64.py:3850: Warning: exception TypeLookupError(['std::_List_const_iterator< ns3::Ptr< ns3::Packet > >'],) in wrapper public: retval? ???::End (params?) const;
   is_const=True)
-/home/omri/Programs/ns-3/workspace/ns-allinone-3.14.1/ns-3.14.1/src/network/bindings/modulegen__gcc_LP64.py:3890: Warning: exception TypeLookupError(['std::pair< double, double >'],) in wrapper <pybindgen.cppmethod.CppConstructor object at 0x7fb8137a7a90>
+/home/omri/Programs/ns-3/workspace/ns-allinone-3.14.1/ns-3.14.1/src/network/bindings/modulegen__gcc_LP64.py:3890: Warning: exception TypeLookupError(['std::pair< double, double >'],) in wrapper <pybindgen.cppmethod.CppConstructor object at 0x7fec83185e50>
   cls.add_constructor([param('std::pair< double, double >', 'params')])
-/home/omri/Programs/ns-3/workspace/ns-allinone-3.14.1/ns-3.14.1/src/network/bindings/modulegen__gcc_LP64.py:3892: Warning: exception TypeLookupError(['std::pair< double, double >'],) in wrapper <pybindgen.cppmethod.CppConstructor object at 0x7fb8137a7ad0>
+/home/omri/Programs/ns-3/workspace/ns-allinone-3.14.1/ns-3.14.1/src/network/bindings/modulegen__gcc_LP64.py:3892: Warning: exception TypeLookupError(['std::pair< double, double >'],) in wrapper <pybindgen.cppmethod.CppConstructor object at 0x7fec83185e90>
   cls.add_constructor([param('std::pair< double, double >', 'params'), param('double', 'b')])
 /home/omri/Programs/ns-3/workspace/ns-allinone-3.14.1/ns-3.14.1/src/network/bindings/modulegen__gcc_LP64.py:3940: Warning: exception TypeConfigurationError('direction not given',) in wrapper public: retval? ???::Write (params?);
   [param('ns3::Time', 't'), param('uint8_t const *', 'buffer'), param('uint32_t', 'length')])
@@ -208,13 +208,13 @@ bindings/python/ns3modulegen-modular.py:27: UserWarning: exception TypeLookupErr
   [param('ns3::Callback< void, ns3::Ptr< ns3::NetDevice >, ns3::empty, ns3::empty, ns3::empty, ns3::empty, ns3::empty, ns3::empty, ns3::empty, ns3::empty >', 'listener')])
 /home/omri/Programs/ns-3/workspace/ns-allinone-3.14.1/ns-3.14.1/src/network/bindings/modulegen__gcc_LP64.py:6027: Warning: exception TypeLookupError(['ns3::Callback< void, ns3::Ptr< ns3::NetDevice >, ns3::empty, ns3::empty, ns3::empty, ns3::empty, ns3::empty, ns3::empty, ns3::empty, ns3::empty >'],) in wrapper public: retval? ???::UnregisterDeviceAdditionListener (params?);
   [param('ns3::Callback< void, ns3::Ptr< ns3::NetDevice >, ns3::empty, ns3::empty, ns3::empty, ns3::empty, ns3::empty, ns3::empty, ns3::empty, ns3::empty >', 'listener')])
-/home/omri/Programs/ns-3/workspace/ns-allinone-3.14.1/ns-3.14.1/src/network/bindings/modulegen__gcc_LP64.py:6090: Warning: exception TypeLookupError(['std::ostream *'],) in wrapper <pybindgen.cppmethod.CppConstructor object at 0x7fb8130e5850>
+/home/omri/Programs/ns-3/workspace/ns-allinone-3.14.1/ns-3.14.1/src/network/bindings/modulegen__gcc_LP64.py:6090: Warning: exception TypeLookupError(['std::ostream *'],) in wrapper <pybindgen.cppmethod.CppConstructor object at 0x7fec82c16b90>
   cls.add_constructor([param('std::ostream *', 'os')])
 /home/omri/Programs/ns-3/workspace/ns-allinone-3.14.1/ns-3.14.1/src/network/bindings/modulegen__gcc_LP64.py:6094: Warning: exception TypeLookupError(['std::ostream *'],) in wrapper public: retval? ???::GetStream (params?);
   [])
-/home/omri/Programs/ns-3/workspace/ns-allinone-3.14.1/ns-3.14.1/src/network/bindings/modulegen__gcc_LP64.py:6106: Warning: exception TypeConfigurationError('direction not given',) in wrapper <pybindgen.cppmethod.CppConstructor object at 0x7fb8130ee710>
+/home/omri/Programs/ns-3/workspace/ns-allinone-3.14.1/ns-3.14.1/src/network/bindings/modulegen__gcc_LP64.py:6106: Warning: exception TypeConfigurationError('direction not given',) in wrapper <pybindgen.cppmethod.CppConstructor object at 0x7fec82b9f810>
   cls.add_constructor([param('uint8_t const *', 'buffer'), param('uint32_t', 'size'), param('bool', 'magic')])
-/home/omri/Programs/ns-3/workspace/ns-allinone-3.14.1/ns-3.14.1/src/network/bindings/modulegen__gcc_LP64.py:6108: Warning: exception TypeConfigurationError('direction not given',) in wrapper <pybindgen.cppmethod.CppConstructor object at 0x7fb8130ee750>
+/home/omri/Programs/ns-3/workspace/ns-allinone-3.14.1/ns-3.14.1/src/network/bindings/modulegen__gcc_LP64.py:6108: Warning: exception TypeConfigurationError('direction not given',) in wrapper <pybindgen.cppmethod.CppConstructor object at 0x7fec82b9f850>
   cls.add_constructor([param('uint8_t const *', 'buffer'), param('uint32_t', 'size')])
 /home/omri/Programs/ns-3/workspace/ns-allinone-3.14.1/ns-3.14.1/src/network/bindings/modulegen__gcc_LP64.py:6149: Warning: exception TypeConfigurationError('direction not given',) in wrapper public: retval? ???::CopyData (params?) const;
   is_const=True)

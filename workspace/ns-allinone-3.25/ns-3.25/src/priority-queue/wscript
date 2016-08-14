@@ -10,6 +10,7 @@ def build(bld):
     module = bld.create_ns3_module('priority-queue', ['core'])
     module.source = [
         'model/priority-queue.cc',
+        'helper/priority-queue-helper.cc',
         ]
 
     module_test = bld.create_ns3_module_test_library('priority-queue')
@@ -21,6 +22,7 @@ def build(bld):
     headers.module = 'priority-queue'
     headers.source = [
         'model/priority-queue.h',
+        'helper/priority-queue-helper.h',
         ]
 
     if bld.env.ENABLE_EXAMPLES:

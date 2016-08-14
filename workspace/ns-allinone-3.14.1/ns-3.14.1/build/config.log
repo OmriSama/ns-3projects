@@ -1,6 +1,6 @@
-# project ns (3.14.1) configured on Thu Aug  4 15:09:34 2016 by
+# project ns (3.14.1) configured on Tue Aug  9 09:19:41 2016 by
 # waf 1.6.11 (abi 98, python 2070cf0 on linux2)
-# using waf configure --with-pybindgen ../pybindgen-0.15.0.809
+# using ./waf -d debug --enable-examples --enable-tests configure
 #
 ----------------------------------------
 Setting top to
@@ -158,7 +158,7 @@ int main() { return 0; }
 ok
 -------------------------------------------------------------------------
 Checking for pybindgen location
-../pybindgen-0.15.0.809 (given)
+../pybindgen-0.15.0.809 (guessed)
 -------------------------------------------------------------------------
 Python module pybindgen
 ['/usr/bin/python', '-c', "\nimport pybindgen as current_module\nversion = getattr(current_module, '__version__', None)\nif version is not None:\n    print(str(version))\nelse:\n    print('unknown version')\n"]
@@ -216,7 +216,7 @@ from /home/omri/Programs/ns-3/workspace/ns-allinone-3.14.1/ns-3.14.1/bindings/py
     raise Errors.BuildError(self.producer.error)
 BuildError: Build failed
  -> task in 'testprog' failed (exit status 1): 
-	{task 140601504247632: cxx test.cc -> test.cc.1.o}
+	{task 139821482399568: cxx test.cc -> test.cc.1.o}
 ['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DPYTHONDIR="/usr/local/lib/python2.7/dist-packages"', '-DPYTHONARCHDIR="/usr/local/lib/python2.7/dist-packages"', '-DHAVE_PYTHON_H=1', '../test.cc', '-c', '-o', 'test.cc.1.o']
 
 -------------------------------------------------------------------------
@@ -305,7 +305,7 @@ from /home/omri/Programs/ns-3/workspace/ns-allinone-3.14.1/ns-3.14.1/src/core: T
     raise Errors.BuildError(self.producer.error)
 BuildError: Build failed
  -> task in 'testprog' failed (exit status 1): 
-	{task 140601504246864: cxx test.cpp -> test.cpp.1.o}
+	{task 139821482596048: cxx test.cpp -> test.cpp.1.o}
 ['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '../test.cpp', '-c', '-o', 'test.cpp.1.o']
 
 not found
@@ -388,7 +388,7 @@ from /home/omri/Programs/ns-3/workspace/ns-allinone-3.14.1/ns-3.14.1/src/core: T
     raise Errors.BuildError(self.producer.error)
 BuildError: Build failed
  -> task in 'testprog' failed (exit status 1): 
-	{task 140601505114768: cxx test.cpp -> test.cpp.1.o}
+	{task 139821482628688: cxx test.cpp -> test.cpp.1.o}
 ['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '../test.cpp', '-c', '-o', 'test.cpp.1.o']
 
 not found
@@ -555,7 +555,7 @@ from /home/omri/Programs/ns-3/workspace/ns-allinone-3.14.1/ns-3.14.1/src/core: T
     raise Errors.BuildError(self.producer.error)
 BuildError: Build failed
  -> task in 'testprog' failed (exit status 1): 
-	{task 140601505114320: cxx test.cpp -> test.cpp.1.o}
+	{task 139821482398160: cxx test.cpp -> test.cpp.1.o}
 ['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '-DHAVE_STDLIB_H=1', '-DHAVE_GETENV=1', '-DHAVE_SIGNAL_H=1', '-DHAVE_PTHREAD_H=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '../test.cpp', '-c', '-o', 'test.cpp.1.o']
 
 not found
@@ -678,7 +678,7 @@ from /home/omri/Programs/ns-3/workspace/ns-allinone-3.14.1/ns-3.14.1/src/stats: 
     raise Errors.BuildError(self.producer.error)
 BuildError: Build failed
  -> task in 'testprog' failed (exit status 1): 
-	{task 140601505113296: cxxprogram test.cpp.1.o -> testprog}
+	{task 139821482077840: cxxprogram test.cpp.1.o -> testprog}
 ['/usr/bin/g++', 'test.cpp.1.o', '-o', '/home/omri/Programs/ns-3/workspace/ns-allinone-3.14.1/ns-3.14.1/build/.conf_check_39b3cecfac3989b2ed760243cef109e6/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-lsqlite3']
 
 not found

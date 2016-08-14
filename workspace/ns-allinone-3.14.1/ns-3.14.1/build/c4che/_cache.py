@@ -47,7 +47,7 @@ DOCDIR = '/usr/local/share/doc/ns'
 DOXYGEN = '/usr/bin/doxygen'
 DVIDIR = '/usr/local/share/doc/ns'
 ENABLE_EMU = True
-ENABLE_EXAMPLES = False
+ENABLE_EXAMPLES = True
 ENABLE_GSL = None
 ENABLE_GTK_CONFIG_STORE = None
 ENABLE_LIBXML2 = True
@@ -58,7 +58,7 @@ ENABLE_REAL_TIME = True
 ENABLE_STATIC_NS3 = False
 ENABLE_SUDO = False
 ENABLE_TAP = True
-ENABLE_TESTS = False
+ENABLE_TESTS = True
 ENABLE_THREADING = True
 EXAMPLE_DIRECTORIES = ['tutorial', 'stats', 'ipv6', 'realtime', 'routing', 'udp', 'mobility', 'naming', 'energy', 'socket', 'wireless', 'error-model', 'matrix-topology', 'udp-client-server', 'tcp']
 EXEC_PREFIX = '/usr/local'
@@ -125,7 +125,7 @@ NS3_ENABLED_MODULES = ['ns3-antenna', 'ns3-aodv', 'ns3-applications', 'ns3-bridg
 NS3_EXECUTABLE_PATH = ['/home/omri/Programs/ns-3/workspace/ns-allinone-3.14.1/ns-3.14.1/build/src/emu', '/home/omri/Programs/ns-3/workspace/ns-allinone-3.14.1/ns-3.14.1/build/src/tap-bridge']
 NS3_MODULES = ['ns3-antenna', 'ns3-aodv', 'ns3-applications', 'ns3-bridge', 'ns3-buildings', 'ns3-config-store', 'ns3-core', 'ns3-csma', 'ns3-csma-layout', 'ns3-dsdv', 'ns3-dsr', 'ns3-emu', 'ns3-energy', 'ns3-flow-monitor', 'ns3-internet', 'ns3-lte', 'ns3-mesh', 'ns3-mobility', 'ns3-mpi', 'ns3-netanim', 'ns3-network', 'ns3-nix-vector-routing', 'ns3-olsr', 'ns3-point-to-point', 'ns3-point-to-point-layout', 'ns3-propagation', 'ns3-spectrum', 'ns3-stats', 'ns3-tap-bridge', 'ns3-test', 'ns3-tools', 'ns3-topology-read', 'ns3-uan', 'ns3-virtual-net-device', 'ns3-wifi', 'ns3-wimax']
 NS3_MODULE_PATH = ['/usr/lib/gcc/x86_64-linux-gnu/5', '/home/omri/Programs/ns-3/workspace/ns-allinone-3.14.1/ns-3.14.1/build']
-NS3_OPTIONAL_FEATURES = [('python', 'Python Bindings', True, None), ('pygccxml', 'Python API Scanning Support', False, "Missing 'pygccxml' Python module"), ('nsclick', 'NS-3 Click Integration', False, 'nsclick not enabled (see option --with-nsclick)'), ('GtkConfigStore', 'GtkConfigStore', [], "library 'gtk+-2.0 >= 2.12' not found"), ('XmlIo', 'XmlIo', True, "library 'libxml-2.0 >= 2.7' not found"), ('Threading', 'Threading Primitives', True, '<pthread.h> include not detected'), ('RealTime', 'Real Time Simulator', True, 'threading not enabled'), ('EmuNetDevice', 'Emulated Net Device', True, '<netpacket/packet.h> include not detected'), ('nsc', 'Network Simulation Cradle', False, 'NSC library liblinux2.6.26.so is missing: NSC has not been built?'), ('mpi', 'MPI Support', False, 'option --enable-mpi not selected'), ('openflow', 'NS-3 OpenFlow Integration', False, 'Required boost libraries not found'), ('SqliteDataOutput', 'SQlite stats data output', [], "library 'sqlite3' not found"), ('TapBridge', 'Tap Bridge', True, '<linux/if_tun.h> include not detected'), ('PyViz', 'PyViz visualizer', False, 'Missing python modules: gtk, goocanvas, pygraphviz'), ('ENABLE_SUDO', 'Use sudo to set suid bit', False, 'option --enable-sudo not selected'), ('ENABLE_TESTS', 'Build tests', False, 'defaults to disabled'), ('ENABLE_EXAMPLES', 'Build examples', False, 'defaults to disabled'), ('GSL', 'GNU Scientific Library (GSL)', [], 'GSL not found')]
+NS3_OPTIONAL_FEATURES = [('python', 'Python Bindings', True, None), ('pygccxml', 'Python API Scanning Support', False, "Missing 'pygccxml' Python module"), ('nsclick', 'NS-3 Click Integration', False, 'nsclick not enabled (see option --with-nsclick)'), ('GtkConfigStore', 'GtkConfigStore', [], "library 'gtk+-2.0 >= 2.12' not found"), ('XmlIo', 'XmlIo', True, "library 'libxml-2.0 >= 2.7' not found"), ('Threading', 'Threading Primitives', True, '<pthread.h> include not detected'), ('RealTime', 'Real Time Simulator', True, 'threading not enabled'), ('EmuNetDevice', 'Emulated Net Device', True, '<netpacket/packet.h> include not detected'), ('nsc', 'Network Simulation Cradle', False, 'NSC library liblinux2.6.26.so is missing: NSC has not been built?'), ('mpi', 'MPI Support', False, 'option --enable-mpi not selected'), ('openflow', 'NS-3 OpenFlow Integration', False, 'Required boost libraries not found'), ('SqliteDataOutput', 'SQlite stats data output', [], "library 'sqlite3' not found"), ('TapBridge', 'Tap Bridge', True, '<linux/if_tun.h> include not detected'), ('PyViz', 'PyViz visualizer', False, 'Missing python modules: gtk, goocanvas, pygraphviz'), ('ENABLE_SUDO', 'Use sudo to set suid bit', False, 'option --enable-sudo not selected'), ('ENABLE_TESTS', 'Build tests', True, 'option --enable-tests selected'), ('ENABLE_EXAMPLES', 'Build examples', True, 'option --enable-examples selected'), ('GSL', 'GNU Scientific Library (GSL)', [], 'GSL not found')]
 NSC_ENABLED = False
 OLDINCLUDEDIR = '/usr/include'
 PACKAGE = 'ns'

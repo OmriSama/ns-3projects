@@ -9,20 +9,8 @@
 def build(bld):
     module = bld.create_ns3_module('experiment', ['core'])
     module.source = [
-        'model/exp-data-header.cc',
-        'model/seq-header.cc',
-        'model/seq32-header.cc',
-        'model/seq16-header.cc',
-
-        'model/compression-app-layer.cc',
-        'model/compression-packet-gen.cc',
-        'model/compression-sender.cc',
-        'model/compression-receiver.cc',
-        'helper/compression-sender-receiver-helper.cc',
-
-        'model/priority-queue-sender.cc',
-        'model/priority-queue-receiver.cc',
-        'helper/priority-queue-helper.cc'
+        'model/experiment.cc',
+        'helper/experiment-helper.cc',
         ]
 
     module_test = bld.create_ns3_module_test_library('experiment')
@@ -33,20 +21,8 @@ def build(bld):
     headers = bld(features='ns3header')
     headers.module = 'experiment'
     headers.source = [
-        'model/exp-data-header.h',
-        'model/seq-header.h',
-        'model/seq32-header.h',
-        'model/seq16-header.h',
-
-        'model/compression-app-layer.h',
-        'model/compression-packet-gen.h',
-        'model/compression-sender.h',
-        'model/compression-receiver.h',
-        'helper/compression-sender-receiver-helper.h',
-
-        'model/priority-queue-sender.h',
-        'model/priority-queue-receiver.h',
-        'helper/priority-queue-helper.h'
+        'model/experiment.h',
+        'helper/experiment-helper.h',
         ]
 
     if bld.env.ENABLE_EXAMPLES:

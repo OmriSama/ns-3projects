@@ -7,5 +7,6 @@
     
 
 // Module headers:
+#include "priority-queue-helper.h"
 #include "priority-queue.h"
 #endif

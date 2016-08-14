@@ -224,10 +224,11 @@ Ptr<Packet>
 PriorityQueue::DoDequeue (void)
 {
   NS_LOG_FUNCTION (this);
+  Ptr<Packet> p;
   
   if (!m_highPackets.empty ())
     {
-      Ptr<Packet> p = m_highPackets.front ();
+      p = m_highPackets.front ();
       m_highPackets.pop ();
       m_bytesInHighQueue -= p->GetSize ();
       
@@ -244,7 +245,7 @@ PriorityQueue::DoDequeue (void)
 
       if (!m_lowPackets.empty ())
         {
-          Ptr<Packet> p = m_lowPackets.front ();
+          p = m_lowPackets.front ();
           m_lowPackets.pop ();
           m_bytesInLowQueue -= p->GetSize ();
           

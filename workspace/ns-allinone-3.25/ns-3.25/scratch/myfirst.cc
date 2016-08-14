@@ -19,13 +19,13 @@
 #include "ns3/internet-module.h"
 #include "ns3/point-to-point-module.h"
 #include "ns3/applications-module.h"
-#include "ns3/netanim-module.h"
 
 using namespace ns3;
 
 NS_LOG_COMPONENT_DEFINE ("FirstScriptExample");
 
-int main (int argc, char *argv[])
+int
+main (int argc, char *argv[])
 {
   Time::SetResolution (Time::NS);
   LogComponentEnable ("UdpEchoClientApplication", LOG_LEVEL_INFO);
@@ -61,12 +61,8 @@ int main (int argc, char *argv[])
   echoClient.SetAttribute ("PacketSize", UintegerValue (1024));
 
   ApplicationContainer clientApps = echoClient.Install (nodes.Get (0));
-  clientApps.Start (Seconds (7.0));
+  clientApps.Start (Seconds (2.0));
   clientApps.Stop (Seconds (10.0));
-
-  AnimationInterface anim("anim1.xml");
-  anim.SetConstantPosition(nodes.Get(0), 1.0, 2.0);
-  anim.SetConstantPosition(nodes.Get(1), 2.0, 3.0);
 
   Simulator::Run ();
   Simulator::Destroy ();
