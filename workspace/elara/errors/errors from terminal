@@ -1,0 +1,89 @@
+omri@omri-VirtualBox:~/Desktop/Link to Programs/ns-3/workspace/ns-allinone-3.25/ns-3.25$ ./waf
+Waf: Entering directory `/home/omri/Programs/ns-3/workspace/ns-allinone-3.25/ns-3.25/build'
+[ 889/1868] Compiling scratch/priority-queue-sim-v2.cc
+[ 890/1868] Compiling scratch/priority-queue-sim.cc
+In file included from ./ns3/priority-queue-helper.h:5:0,
+                 from ./ns3/priority-queue-module.h:10,
+                 from ../scratch/priority-queue-sim-v2.cc:18:
+./ns3/priority-queue.h:28:23: error: invalid covariant return type for ‘virtual ns3::Ptr<ns3::Packet> ns3::PriorityQueue::DoDequeue()’
+   virtual Ptr<Packet> DoDequeue (void);
+                       ^
+In file included from ./ns3/drop-tail-queue.h:23:0,
+                 from ./ns3/network-module.h:24,
+                 from ../scratch/priority-queue-sim-v2.cc:12:
+./ns3/queue.h:215:26: error:   overriding ‘virtual ns3::Ptr<ns3::QueueItem> ns3::Queue::DoDequeue()’
+   virtual Ptr<QueueItem> DoDequeue (void) = 0;
+                          ^
+In file included from ./ns3/priority-queue-helper.h:5:0,
+                 from ./ns3/priority-queue-module.h:10,
+                 from ../scratch/priority-queue-sim-v2.cc:18:
+./ns3/priority-queue.h:29:29: error: invalid covariant return type for ‘virtual ns3::Ptr<const ns3::Packet> ns3::PriorityQueue::DoPeek() const’
+   virtual Ptr<const Packet> DoPeek (void) const;
+                             ^
+In file included from ./ns3/drop-tail-queue.h:23:0,
+                 from ./ns3/network-module.h:24,
+                 from ../scratch/priority-queue-sim-v2.cc:12:
+./ns3/queue.h:220:32: error:   overriding ‘virtual ns3::Ptr<const ns3::QueueItem> ns3::Queue::DoPeek() const’
+   virtual Ptr<const QueueItem> DoPeek (void) const = 0;
+                                ^
+../scratch/priority-queue-sim-v2.cc: In function ‘int main(int, char**)’:
+../scratch/priority-queue-sim-v2.cc:175:3: error: ‘PriorityQueueSenderHelper’ was not declared in this scope
+   PriorityQueueSenderHelper sendHelper;
+   ^
+../scratch/priority-queue-sim-v2.cc:176:3: error: ‘sendHelper’ was not declared in this scope
+   sendHelper.SetAttribute ("RemoteUdpPortHigh", UintegerValue (priorityPort));
+   ^
+../scratch/priority-queue-sim-v2.cc:193:3: error: ‘PriorityQueueReceiverHelper’ was not declared in this scope
+   PriorityQueueReceiverHelper recvHelper;
+   ^
+../scratch/priority-queue-sim-v2.cc:194:3: error: ‘recvHelper’ was not declared in this scope
+   recvHelper.SetAttribute ("UdpPortHigh", UintegerValue (priorityPort));
+   ^
+
+In file included from ./ns3/priority-queue-helper.h:5:0,
+                 from ./ns3/priority-queue-module.h:10,
+                 from ../scratch/priority-queue-sim.cc:18:
+./ns3/priority-queue.h:28:23: error: invalid covariant return type for ‘virtual ns3::Ptr<ns3::Packet> ns3::PriorityQueue::DoDequeue()’
+   virtual Ptr<Packet> DoDequeue (void);
+                       ^
+In file included from ./ns3/drop-tail-queue.h:23:0,
+                 from ./ns3/network-module.h:24,
+                 from ../scratch/priority-queue-sim.cc:12:
+./ns3/queue.h:215:26: error:   overriding ‘virtual ns3::Ptr<ns3::QueueItem> ns3::Queue::DoDequeue()’
+   virtual Ptr<QueueItem> DoDequeue (void) = 0;
+                          ^
+In file included from ./ns3/priority-queue-helper.h:5:0,
+                 from ./ns3/priority-queue-module.h:10,
+                 from ../scratch/priority-queue-sim.cc:18:
+./ns3/priority-queue.h:29:29: error: invalid covariant return type for ‘virtual ns3::Ptr<const ns3::Packet> ns3::PriorityQueue::DoPeek() const’
+   virtual Ptr<const Packet> DoPeek (void) const;
+                             ^
+In file included from ./ns3/drop-tail-queue.h:23:0,
+                 from ./ns3/network-module.h:24,
+                 from ../scratch/priority-queue-sim.cc:12:
+./ns3/queue.h:220:32: error:   overriding ‘virtual ns3::Ptr<const ns3::QueueItem> ns3::Queue::DoPeek() const’
+   virtual Ptr<const QueueItem> DoPeek (void) const = 0;
+                                ^
+../scratch/priority-queue-sim.cc: In function ‘int main(int, char**)’:
+../scratch/priority-queue-sim.cc:187:3: error: ‘PriorityQueueSenderHelper’ was not declared in this scope
+   PriorityQueueSenderHelper sendHelper;
+   ^
+../scratch/priority-queue-sim.cc:188:3: error: ‘sendHelper’ was not declared in this scope
+   sendHelper.SetAttribute ("RemoteUdpPortHigh", UintegerValue (priorityPort));
+   ^
+../scratch/priority-queue-sim.cc:205:3: error: ‘PriorityQueueReceiverHelper’ was not declared in this scope
+   PriorityQueueReceiverHelper recvHelper;
+   ^
+../scratch/priority-queue-sim.cc:206:3: error: ‘recvHelper’ was not declared in this scope
+   recvHelper.SetAttribute ("UdpPortHigh", UintegerValue (priorityPort));
+   ^
+
+Waf: Leaving directory `/home/omri/Programs/ns-3/workspace/ns-allinone-3.25/ns-3.25/build'
+Build failed
+ -> task in 'priority-queue-sim-v2' failed (exit status 1): 
+	{task 140379327918864: cxx priority-queue-sim-v2.cc -> priority-queue-sim-v2.cc.4.o}
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-Wno-error=deprecated-declarations', '-fstrict-aliasing', '-Wstrict-aliasing', '-pthread', '-I.', '-I..', '-I/usr/include/libxml2', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '-DHAVE_PACKET_H=1', '-DHAVE_IF_TUN_H=1', '-DHAVE_LIBXML2=1', '../scratch/priority-queue-sim-v2.cc', '-c', '-o', '/home/omri/Programs/ns-3/workspace/ns-allinone-3.25/ns-3.25/build/scratch/priority-queue-sim-v2.cc.4.o']
+ -> task in 'priority-queue-sim' failed (exit status 1): 
+	{task 140379327888656: cxx priority-queue-sim.cc -> priority-queue-sim.cc.3.o}
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-Wno-error=deprecated-declarations', '-fstrict-aliasing', '-Wstrict-aliasing', '-pthread', '-I.', '-I..', '-I/usr/include/libxml2', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '-DHAVE_PACKET_H=1', '-DHAVE_IF_TUN_H=1', '-DHAVE_LIBXML2=1', '../scratch/priority-queue-sim.cc', '-c', '-o', '/home/omri/Programs/ns-3/workspace/ns-allinone-3.25/ns-3.25/build/scratch/priority-queue-sim.cc.3.o']
+omri@omri-VirtualBox:~/Desktop/Link to Programs/ns-3/workspace/ns-allinone-3.25/ns-3.25$ 

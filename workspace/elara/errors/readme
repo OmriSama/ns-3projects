@@ -1,0 +1,18 @@
+# The main thing me and Richard had to change was the wscript; specifically:
+# all the parts that say
+	bld.new_task_gen(...)
+# to just:
+	bld(...)
+# and everywhere that says
+	bld.add_subdirs(...)
+# to
+	bld.recurse(...)
+
+# And then we started getting actual C++ errors with the files such as 
+
+./ns3/priority-queue.h:28:23: error: invalid covariant return type for ‘virtual ns3::Ptr<ns3::Packet> ns3::PriorityQueue::DoDequeue()’
+   virtual Ptr<Packet> DoDequeue (void);
+                          ^
+# Hopefully we can figure out what the issue is
+
+# The wscript in here is from src/priority-queue but it is edited to work with our current environment
