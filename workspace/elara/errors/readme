@@ -16,3 +16,52 @@
 # Hopefully we can figure out what the issue is
 
 # The wscript in here is from src/priority-queue but it is edited to work with our current environment
+
+# C++ Extended Errors:
+---------------------------------------------------------------------------------->
+In file included from ../src/priority-queue/model/priority-queue.cc:7:0:
+../src/priority-queue/model/priority-queue.h:28:23: error: invalid covariant return type for ‘virtual ns3::Ptr<ns3::Packet> ns3::PriorityQueue::DoDequeue()’
+   virtual Ptr<Packet> DoDequeue (void);
+                       ^
+In file included from ../src/priority-queue/model/priority-queue.h:8:0,
+                 from ../src/priority-queue/model/priority-queue.cc:7:
+./ns3/queue.h:215:26: error:   overriding ‘virtual ns3::Ptr<ns3::QueueItem> ns3::Queue::DoDequeue()’
+   virtual Ptr<QueueItem> DoDequeue (void) = 0;
+                          ^
+In file included from ../src/priority-queue/model/priority-queue.cc:7:0:
+../src/priority-queue/model/priority-queue.h:29:29: error: invalid covariant return type for ‘virtual ns3::Ptr<const ns3::Packet> ns3::PriorityQueue::DoPeek() const’
+   virtual Ptr<const Packet> DoPeek (void) const;
+                             ^
+In file included from ../src/priority-queue/model/priority-queue.h:8:0,
+                 from ../src/priority-queue/model/priority-queue.cc:7:
+./ns3/queue.h:220:32: error:   overriding ‘virtual ns3::Ptr<const ns3::QueueItem> ns3::Queue::DoPeek() const’
+   virtual Ptr<const QueueItem> DoPeek (void) const = 0;
+                                ^
+In file included from ./ns3/object-base.h:23:0,
+                 from ./ns3/chunk.h:24,
+                 from ./ns3/header.h:24,
+                 from ./ns3/packet.h:25,
+                 from ../src/priority-queue/model/priority-queue.h:7,
+                 from ../src/priority-queue/model/priority-queue.cc:7:
+./ns3/type-id.h: In instantiation of ‘static ns3::ObjectBase* ns3::TypeId::AddConstructor()::Maker::Create() [with T = ns3::PriorityQueue]’:
+./ns3/type-id.h:599:3:   required from ‘ns3::TypeId ns3::TypeId::AddConstructor() [with T = ns3::PriorityQueue]’
+../src/priority-queue/model/priority-queue.cc:29:37:   required from here
+./ns3/type-id.h:596:34: error: invalid new-expression of abstract class type ‘ns3::PriorityQueue’
+       ObjectBase * base = new T ();
+                                  ^
+In file included from ../src/priority-queue/model/priority-queue.cc:7:0:
+../src/priority-queue/model/priority-queue.h:14:7: note:   because the following virtual functions are pure within ‘ns3::PriorityQueue’:
+ class PriorityQueue : public Queue {
+       ^
+In file included from ../src/priority-queue/model/priority-queue.h:8:0,
+                 from ../src/priority-queue/model/priority-queue.cc:7:
+./ns3/queue.h:210:16: note: 	virtual bool ns3::Queue::DoEnqueue(ns3::Ptr<ns3::QueueItem>)
+   virtual bool DoEnqueue (Ptr<QueueItem> item) = 0;
+                ^
+ Build failed
+ -> task in 'ns3-priority-queue' failed (exit status 1): 
+	{task 139651624138064: cxx priority-queue.cc -> priority-queue.cc.1.o}
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-Wno-error=deprecated-declarations', '-fstrict-aliasing', '-Wstrict-aliasing', '-fPIC', '-pthread', '-I.', '-I..', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '-DHAVE_PACKET_H=1', '-DHAVE_IF_TUN_H=1', '-DHAVE_GSL=1', '../src/priority-queue/model/priority-queue.cc', '-c', '-o', '/home/chad/Desktop/ns-allinone-3.25/ns-3.25/build/src/priority-queue/model/priority-queue.cc.1.o']
+
+--------------------------------------------------------------------------------------------->
+# Probably deprecation of some files and newer syntax.
